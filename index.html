@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemera  Capital Partners</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+  <header class="container header">
+    <!--  <div class="header__logo">
+      <div class="logo__symbols">
+        <div class="logo__ilustration ilustration-left"></div>
+        <div class="logo__ilustration ilustration-top"></div>
+        <div class="logo__ilustration ilustration-bottom"></div>
+        <div class="logo__ilustration ilustration-right"></div>
+      </div>  -->
+      <h1 class="logo-name"> 
+        <canvas id="symbol"></canvas>
+        <a href="#">
+          <p>Hemera</p>
+          <p>Capital</p>
+          <p>Partners</p>
+        </a>
+      </h1>
+    <nav>
+      <div class="header__hamburguer-icon">
+        <div class="header__hamburguer-line"></div>
+        <div class="header__hamburguer-line"></div>
+        <div class="header__hamburguer-line"></div>
+      </div>
+      <ul class="header__menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Geographies</a></li>
+        <li><a href="#">Southern Africa</a></li>
+        <li><a href="#">Responsability</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">En</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+<script>
+  var canvas = document.getElementById('symbol')
+  var ctx = canvas.getContext('2d')
+
+  ctx.fillStyle = '#fff'
+  ctx.fillRect(120, 0, 53, 65)
+  ctx.fillRect(120, 85, 53, 65)
+  ctx.fillRect(30, 40, 53, 65)
+  ctx.fillRect(210, 40, 53, 65)
+</script>
+</html>
