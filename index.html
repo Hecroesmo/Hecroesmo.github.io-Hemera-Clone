@@ -10,13 +10,6 @@
 </head>
 <body>
   <header class="container header">
-    <!--  <div class="header__logo">
-      <div class="logo__symbols">
-        <div class="logo__ilustration ilustration-left"></div>
-        <div class="logo__ilustration ilustration-top"></div>
-        <div class="logo__ilustration ilustration-bottom"></div>
-        <div class="logo__ilustration ilustration-right"></div>
-      </div>  -->
       <h1 class="logo-name"> 
         <canvas id="symbol"></canvas>
         <a href="#">
@@ -41,15 +34,6 @@
       </ul>
     </nav>
   </header>
+  <script src="js/draw-symbol.js"></script>
 </body>
-<script>
-  var canvas = document.getElementById('symbol')
-  var ctx = canvas.getContext('2d')
-
-  ctx.fillStyle = '#fff'
-  ctx.fillRect(120, 0, 53, 65)
-  ctx.fillRect(120, 85, 53, 65)
-  ctx.fillRect(30, 40, 53, 65)
-  ctx.fillRect(210, 40, 53, 65)
-</script>
 </html>
