@@ -7,6 +7,7 @@
   <title>Hemera  Capital Partners</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
+  <script src="https://kit.fontawesome.com/e78319cec3.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="container header">
@@ -25,12 +26,26 @@
         <div class="header__hamburguer-line"></div>
       </div>
       <ul class="header__menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Geographies</a></li>
-        <li><a href="#">Southern Africa</a></li>
-        <li><a href="#">Responsability</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">En</a></li>
+        <div class="dropdown">
+          <li class="menu__item"><a id="drop" class="dropdown-btn" href="#">About <i class="fas fa-angle-down"></i></li>
+          <ul id="about" class="dropdown__items">
+            <li class="dropdown__item"><a href="#">the firm</a></li>
+            <li class="dropdown__item"><a href="#">competencies</a></li>
+            <li class="dropdown__item"><a href="#">people</a></li>
+            <li class="dropdown__item"><a href="#">reports</a></li>
+          </ul>
+        </div>
+        <li class="menu__item"><a href="#">geographies</a></li>
+        <li class="menu__item"><a href="#">southern Africa</a></li>
+        <li class="menu__item"><a href="#">responsability</a></li>
+        <li class="menu__item"><a href="#">contacts</a></li>
+        <div class="dropdown">
+          <li class="menu__item"><a id="drop" class="dropdown-btn" href="#">en <i class="fas fa-angle-down"></i></li>
+          <ul id="language" class="dropdown__items">
+            <li class="dropdown__item"><a href="#">en</a></li>
+            <li class="dropdown__item"><a href="#">pt</a></li>
+          </ul>
+        </div>
       </ul>
     </nav>
   </header>

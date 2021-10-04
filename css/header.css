@@ -42,6 +42,50 @@ html, body {
   font-weight: 500;
 }
 
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown__items {
+  display: none;
+  background-color: #6085c2;
+  padding: 1.5em .1em;
+  position: absolute;
+  padding-right: 1.3em;
+  z-index: 1;
+}
+
+
+#language {
+  margin-left: 1em;
+}
+
+.dropdown:hover .dropdown__items {
+  display: block;
+}
+.dropdown__item {
+  padding-bottom: 1.5em;
+  font-size: .9em;
+  display: block;
+}
+
+.dropdown__item:last-child {
+  padding-bottom: 0;
+}
+
+.dropdown__item a:hover {
+  color: #b6cef5;
+}
+
+.menu__item {
+  padding-bottom: .5em;
+}
+
+.menu__item a:hover, .menu__item a:focus {
+  color: #6085c2;
+}
+
 .header__menu {
   display: none;
 }
@@ -53,6 +97,10 @@ html, body {
   background-color: #fff;
 
   margin: 6px 0;
+}
+
+.show {
+  display: inline-block;
 }
 
 @media (min-width: 1200px) {
