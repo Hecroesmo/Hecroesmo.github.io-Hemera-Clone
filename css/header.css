@@ -4,7 +4,9 @@ html, body {
 
 .container {
   width: 88%;
+
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 .header {
@@ -14,19 +16,18 @@ html, body {
   flex-wrap: wrap;
 
   font-weight: 500;
-  text-transform: uppercase;
   color: #fff;
 
-  background-color: #3d629d;
-  padding: 32px 5%;
+  margin-bottom: 3em;
+  padding-top: 2.5em;
 
+  background-color: #3d629d;
   box-sizing: border-box;
-  height: 12rem;
 }
 
 #symbol {
-  width: 45px;
-  height: 53px;
+  width: 2.5em;
+  height: 2.9em;
 
   margin-right: .5rem;
   
@@ -38,8 +39,11 @@ html, body {
   justify-content: space-between;
   align-items: center;
 
+  letter-spacing: 2px;
   line-height: 1.3;
   font-weight: 500;
+  font-size: 1.1em;
+  text-transform: uppercase;
 }
 
 .dropdown {
@@ -48,25 +52,31 @@ html, body {
 }
 
 .dropdown__items {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+
   background-color: #6085c2;
   padding: 1.5em .1em;
-  position: absolute;
   padding-right: 1.3em;
+  
+  position: absolute;
   z-index: 1;
-}
 
+  transition: visibility 0s, opacity .5s ease-out;
+}
 
 #language {
   margin-left: 1em;
 }
 
 .dropdown:hover .dropdown__items {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .dropdown__item {
   padding-bottom: 1.5em;
   font-size: .9em;
+  text-transform: uppercase;
   display: block;
 }
 
@@ -74,16 +84,39 @@ html, body {
   padding-bottom: 0;
 }
 
-.dropdown__item a:hover {
-  color: #b6cef5;
+.menu__item {
+  font-size: .8em;
+  text-transform: uppercase;
 }
 
-.menu__item {
-  padding-bottom: .5em;
+.menu__item a {
+  color: #fff;
+  transition: color .4s ease-out;
 }
 
 .menu__item a:hover, .menu__item a:focus {
   color: #6085c2;
+}
+
+.dropdown__item a {
+  color: #fff;
+  transition: color .4s ease-out;
+}
+
+.dropdown__item a:hover {
+  color: #dadada;
+}
+
+.separator {
+  height: 0;
+  width: 100%;
+
+  border: 2px solid #6085c2;
+  margin-top: 3em;
+}
+
+.menu__item {
+  padding-bottom: .5em;
 }
 
 .header__menu {
@@ -103,14 +136,73 @@ html, body {
   display: inline-block;
 }
 
-@media (min-width: 1200px) {
-  .header {
-    letter-spacing: 2px;
-    font-size: .8em;
+/*-----------------------------------------------*/
+.porpose {
+  width: 100%;
+}
+
+.porpose__title {
+  padding: 10% 0 .9em;
+
+  font-family: 'Lusitana', serif;
+  font-size: 5.5vh;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+
+  width: 100%;
+}
+
+div.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  line-height: 1.3em;
+  font-size: 2.2vh;
+
+  /*  border: 1px solid #fff;  */
+  padding-bottom: 1.7em;
+  margin-bottom: 1em;
+}
+
+.info__text {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2em;
+}
+
+.info__link a {
+  display: inline-block;
+  border-top: 4px solid #6085c2;
+  border-bottom: 4px solid #6085c2;
+  padding: .7em 0;
+}
+
+@media (min-width: 768px) {
+  div.info {
+    flex-direction: row;
+    align-items: flex-end;
   }
 
-  .logo-name {
-    font-size: 1.5em;
+  .info__text {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .porpose__title {
+    width: 60%;
+  }
+}
+
+@media (min-width: 862px) {
+  .porpose__title {
+    font-size: 6vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    letter-spacing: 1px;
   }
 
   .header__hamburguer-icon {
@@ -123,5 +215,22 @@ html, body {
 
   .header__menu li {
     margin-left: 1.5em;
+  }
+
+  .porpose__title {
+    width: 70%;
+    font-size: 6.5vh;
+  }
+}
+
+@media (min-width: 1300px) {
+  .porpose__title {
+    font-size: 7vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .porpose__title {
+    font-size: 7.5vh;
   }
 }
