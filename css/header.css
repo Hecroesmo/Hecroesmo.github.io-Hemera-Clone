@@ -176,6 +176,12 @@ div.info {
   border-top: 4px solid #6085c2;
   border-bottom: 4px solid #6085c2;
   padding: .7em 0;
+  transition: border-color .5s, padding .5s;
+}
+
+.info__link a:hover {
+  border-color: #3d629d;
+  padding: .6em 0;
 }
 
 @media (min-width: 768px) {
