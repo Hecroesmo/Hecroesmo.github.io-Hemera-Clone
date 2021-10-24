@@ -64,6 +64,11 @@
     height: 10%;
     padding: 1em .4em;
     max-width: 20em;
+    transition: background-color 1s;
+}
+
+.strategy__link:hover {
+  background-color: #3d629d;
 }
 
 @media (min-width: 493px) {
