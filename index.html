@@ -7,66 +7,82 @@
   <title>Hemera  Capital Partners</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
-  <script src="https://kit.fontawesome.com/e78319cec3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/strategy.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lusitana&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e78319cec3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="container header">
-      <h1 class="logo-name"> 
-        <canvas id="symbol"></canvas>
-        <a href="#">
-          <p>Hemera</p>
-          <p>Capital</p>
-          <p>Partners</p>
-        </a>
-      </h1>
-    <nav>
-      <div class="header__hamburguer-icon">
-        <div class="header__hamburguer-line"></div>
-        <div class="header__hamburguer-line"></div>
-        <div class="header__hamburguer-line"></div>
-      </div>
-      <ul class="header__menu">
-        <div class="dropdown">
-          <li class="menu__item"><a id="drop" class="dropdown-btn" href="#">About <i class="fas fa-angle-down"></i></li>
-          <ul id="about" class="dropdown__items">
-            <li class="dropdown__item"><a href="#">the firm</a></li>
-            <li class="dropdown__item"><a href="#">competencies</a></li>
-            <li class="dropdown__item"><a href="#">people</a></li>
-            <li class="dropdown__item"><a href="#">reports</a></li>
-          </ul>
+    <header class="container header">
+        <h1 class="logo-name"> 
+          <canvas id="symbol"></canvas>
+          <a href="#">
+            <p>Hemera</p>
+            <p>Capital</p>
+            <p>Partners</p>
+          </a>
+        </h1>
+      <nav>
+        <div class="header__hamburguer-icon">
+          <div class="header__hamburguer-line"></div>
+          <div class="header__hamburguer-line"></div>
+          <div class="header__hamburguer-line"></div>
         </div>
-        <li class="menu__item"><a href="#">geographies</a></li>
-        <li class="menu__item"><a href="#">southern Africa</a></li>
-        <li class="menu__item"><a href="#">responsability</a></li>
-        <li class="menu__item"><a href="#">contacts</a></li>
-        <div class="dropdown">
-          <li class="menu__item"><a id="drop" class="dropdown-btn" href="#">en <i class="fas fa-angle-down"></i></li>
-          <ul id="language" class="dropdown__items">
-            <li class="dropdown__item"><a href="#">en</a></li>
-            <li class="dropdown__item"><a href="#">pt</a></li>
-          </ul>
-        </div>
-      </ul>
-    </nav>
-    <div class="separator"></div>
-    <section class="porpose">
-      <article>
+        <ul class="header__menu">
+          <div class="dropdown">
+            <li class="menu__item"><a id="drop" class="dropdown-btn" href="#">About <i class="fas fa-angle-down"></i></li>
+            <ul id="about" class="dropdown__items">
+              <li class="dropdown__item"><a href="#">the firm</a></li>
+              <li class="dropdown__item"><a href="#">competencies</a></li>
+              <li class="dropdown__item"><a href="#">people</a></li>
+              <li class="dropdown__item"><a href="#">reports</a></li>
+            </ul>
+          </div>
+          <li class="menu__item"><a href="#">geographies</a></li>
+          <li class="menu__item"><a href="#">southern Africa</a></li>
+          <li class="menu__item"><a href="#">responsability</a></li>
+          <li class="menu__item"><a href="#">contacts</a></li>
+          <div class="dropdown">
+            <li class="menu__item"><a id="drop" class="dropdown-btn" href="#">en <i class="fas fa-angle-down"></i></li>
+            <ul id="language" class="dropdown__items">
+              <li class="dropdown__item"><a href="#">en</a></li>
+              <li class="dropdown__item"><a href="#">pt</a></li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+      <div class="separator"></div>
+      <section class="porpose">
         <h1 class="porpose__title">We provide asset management &amp;
           financial advisory services with a focus on Southern Africa
-       </h1>
-       <div class="info">
-        <p class="info__text">With five regulated investment vehicles under management,
-          we combine a deep understanding of asset management and
-          investment banking with hands-on knowledge of the core markets.
-       </p>
-       <p class="info__link"><a href="#">Learn more about us</a></p>
-       </div>
-      </article>
-    </section>
-  </header>
+        </h1>
+        <div class="info">
+          <p class="info__text">With five regulated investment vehicles under management,
+            we combine a deep understanding of asset management and
+            investment banking with hands-on knowledge of the core markets.
+        </p>
+        <p class="info__link"><a href="#">Learn more about us</a></p>
+        </div>
+      </section>
+    </header>
+
+  <section class="container strategy">
+    <figure class="image__container">
+      <img class="strategy__img" src="img/mountain-6596074_640.jpg" alt="montain image">
+    </figure>
+
+    <div class="strategy__info">
+      <span class="strategy__span">key strategic insight</span>
+      <h2 class="strategy__title">Southern Africa, a land of emerging potencial</h2>
+      <p class="strategy__text">
+        Nowdays emerging and frontier markets arise as a key drivers of global business strategy,
+         and Southern Africa, in particular, has been strengthening its base for sustainable growth.
+         However turning potential into sustainable business opportunities requires a very specific set of skill.
+      </p>
+      <a class="strategy__link" href="#">our perspective on southern africa</a>
+    </div>
+  </section>
   <script src="js/draw-symbol.js"></script>
 </body>
 </html>
