@@ -1,22 +1,11 @@
 .strategy {
-    display: flex;
-    justify-content: flex-end;
+    display: flex;  
     flex-direction: column;
 }
 
-.image__container,
- .strategy__info {
-    box-sizing: border-box;
-}
-
-.image__container {
+.strategy__img{
     width: 100%;
     height: auto;
-}
-
-.strategy__img{
-    width: inherit;
-    height: inherit;
 }
 
 .strategy__info {
@@ -40,7 +29,7 @@
     font-size: 2.3em;
     font-family: 'Lusitana', serif;
 
-    margin: .7em 0 1em 0;
+    margin: .7em 0 1em 0;   
 }
 
 .strategy__text {
@@ -80,6 +69,11 @@
 @media (min-width: 768px) {
     .strategy {
         flex-direction: row;       
+    }
+
+    .strategy__img{
+        width: 50%;
+        height: auto;
     }
 
     .strategy__info {
