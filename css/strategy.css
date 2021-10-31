@@ -25,22 +25,15 @@
 
 .strategic__link {
     align-self: center;
-    text-transform: uppercase;
     text-align: center;
     font-size: .75em;
     letter-spacing: .1em;
-    background-color: #6085c2;
     width: 80%;
     height: 10%;
     padding: 1em .4em;
     max-width: 30em;
-    transition: background-color 1s;
     margin-bottom: 1em;
 }
-
-.strategic__link:hover {
-    background-color: #3d629d;
-  }
 
 @media (min-width: 493px) {
     .info__link {

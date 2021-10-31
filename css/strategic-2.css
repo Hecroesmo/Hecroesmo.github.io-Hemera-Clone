@@ -1,0 +1,64 @@
+
+.strategic-2__info {
+  display: flex;
+  border: 3px solid #6085c2;
+}
+
+.strategic-2__img {
+  margin-bottom: 1em;
+}
+
+.strategic-2__span {
+  opacity: .7;
+  color: #2a436e;
+}
+
+.strategic-2__title {
+  margin-top: .5em;
+  color: #2a436e;
+}
+
+.strategic-2__text {
+  color: #000;
+  font-size: .9em;
+  font-style: italic;
+  margin-bottom: 3em;
+}
+
+.strategic-2__links {
+  display: flex;
+}
+
+.strategic-2__btn {
+  display: inline-block;
+  padding: 14px 19px;
+  width: 96px;
+  height: auto;
+  margin-right: 36px;
+}
+
+@media (min-width: 768px) {
+  .strategic-2__info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #flex-container {
+    order: -1;
+    width: 85%;
+  }
+
+  .strategic-2__title {
+    margin-bottom: 1em;
+  }
+
+  .strategic-2__title,
+    .strategic-2__text {
+      width: 80%;
+    }
+
+  .strategic-2__img {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
