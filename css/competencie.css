@@ -1,0 +1,50 @@
+
+.competencie__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #2a436e;
+}
+
+.competencie__span {
+  opacity: 1;
+  font-size: 1.2em;
+}
+
+.competencie__title {
+  font-family: 'Zen Antique', serif;
+}
+
+.competencie__text {
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.competencie__links {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+}
+
+.competencie__links a {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .competencie {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .competencie__info {
+      order: -1;
+      width: 80%;
+      margin-right: 2em;
+  }
+}
+
