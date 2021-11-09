@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .strategy {
     display: flex;  
     flex-direction: column;
@@ -79,4 +80,60 @@
     .strategy__info {
         order: -1;
     }
+=======
+
+.container__img{
+    width: 100%;
+    height: auto;
+}
+
+.strategic__info {
+    color: #fff;
+    background-color: #333333;
+}
+
+.strategic__span {
+    font-weight: 700;
+
+}
+
+.strategic__text {
+    font-style: italic;
+    padding-bottom: 10%;
+}
+
+.info__title, .strategic__text  {
+    width: 100%;
+}
+
+.strategic__link {
+    align-self: center;
+    text-align: center;
+    font-size: .75em;
+    letter-spacing: .1em;
+    width: 80%;
+    height: 10%;
+    padding: 1em .4em;
+    max-width: 30em;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 493px) {
+    .info__link {
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    .strategic__info {
+        order: -1;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .strategic__text  {
+        width: 80%;
+    }
+>>>>>>> d79f0ce5a3881d0fd7558193c18a96c48eda51a1
 }
