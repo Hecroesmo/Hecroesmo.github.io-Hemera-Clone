@@ -1,6 +1,5 @@
 
 .container__img{
-    width: 100%;
     height: auto;
 }
 
@@ -11,7 +10,6 @@
 
 .strategic__span {
     font-weight: 700;
-
 }
 
 .strategic__text {
@@ -46,6 +44,14 @@
         order: -1;
         width: 100%;
     }
+
+    .container__img {
+        width: 40%;
+    }
+
+    .strategic__info {
+        width: 60%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -53,3 +59,14 @@
         width: 80%;
     }
 }
+
+/*  .container__img{
+    width: 100%;
+    height: auto;
+}
+
+.strategic__info {
+    width: 100%;
+    color: #fff;
+    background-color: #333333;
+}   */

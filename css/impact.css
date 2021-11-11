@@ -1,0 +1,11 @@
+.impact__link {
+  max-width: 20em;
+  text-align: left;
+  align-self: flex-start;
+  font-size: .75em;
+  padding: 1.3em 1.7em;
+}
+
+.impact__title {
+  font-family: 'Lusitana', serif;
+}
