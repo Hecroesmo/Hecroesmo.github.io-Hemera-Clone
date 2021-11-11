@@ -42,8 +42,13 @@
 
   .competencie__info {
       order: -1;
-      width: 80%;
-      margin-right: 2em;
+      width: 45%;
+      margin-right: 1em;
+  }
+
+  .competencie__img {
+    width: 45%;
+    margin-left: 1em;
   }
 }
 
